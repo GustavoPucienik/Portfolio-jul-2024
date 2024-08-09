@@ -12,6 +12,9 @@ export default function Menu() {
         <MenuLink to="/sobremim">
             Sobre mim
         </MenuLink>
+        <MenuLink to="/projetos">
+            Projetos
+        </MenuLink>
       </nav>
     </header>
   );

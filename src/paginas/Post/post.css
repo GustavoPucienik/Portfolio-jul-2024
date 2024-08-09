@@ -30,6 +30,8 @@
 .post-markdown-container img {
     display: block;
     margin: 0 auto;
+    overflow: hidden;
+    max-width: 100%;
 }
 
 .post-markdown-container ul {
