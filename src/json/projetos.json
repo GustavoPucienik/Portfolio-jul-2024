@@ -1,12 +1,17 @@
 [
   {
     "id": 1,
-    "titulo" : "Sistema de ordens de serviço",
+    "titulo" : "Sistema de ordens de serviço para manutenção.",
     "url": "https://github.com/GustavoPucienik/Ordem_de_servico"
   },
   {
     "id": 2,
-    "titulo" : "Api em typescript",
+    "titulo" : "Api de produtos em typescript.",
     "url": "https://github.com/GustavoPucienik/Api-rest-typescript"
+  },
+  {
+    "id": 3,
+    "titulo": "Consultar tabela fipe do seu veiculo em java",
+    "url": "https://github.com/GustavoPucienik/TabelaFipe_JAVA"
   }
 ]
