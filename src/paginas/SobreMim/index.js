@@ -29,6 +29,8 @@ export default function SobreMim() {
       Ao longo desses anos, me dediquei a aprender diversas linguagens e frameworks, incluindo SQL, Node.js, React, PHP, Python e Java. Cada um desses cursos me ajudou a entender melhor diferentes aspectos do desenvolvimento e a aprimorar minhas habilidades técnicas. Alguns desses projetos estão no meu <a href="https://github.com/GustavoPucienik" target="_blank" rel="noreferrer">github</a>.
     </p>
 
+    <p className={styles.paragrafo}>E também estudei por 1 ano na <a href="https://cursos.alura.com.br/user/gomespucienik" target="_blank" rel="noopener noreferrer">alura</a>, concluindo varios cursos de programação.</p>
+
     <p className={styles.paragrafo}>
       Um dos meus maiores projetos até agora foi a criação de um sistema de ordens de serviço para a empresa Apwinner. Esse projeto foi um desafio incrível e me proporcionou uma experiência prática valiosa na resolução de problemas do mundo real.
     </p>
