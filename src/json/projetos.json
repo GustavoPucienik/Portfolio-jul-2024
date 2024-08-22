@@ -6,11 +6,16 @@
   },
   {
     "id": 2,
+    "titulo": "Api para pet shop em typescript.",
+    "url": "https://github.com/GustavoPucienik/API-PetShop-typescript"
+  },
+  {
+    "id": 3,
     "titulo" : "Api de produtos em typescript.",
     "url": "https://github.com/GustavoPucienik/Api-rest-typescript"
   },
   {
-    "id": 3,
+    "id": 4,
     "titulo": "Consultar tabela fipe do seu veiculo em java",
     "url": "https://github.com/GustavoPucienik/TabelaFipe_JAVA"
   }
