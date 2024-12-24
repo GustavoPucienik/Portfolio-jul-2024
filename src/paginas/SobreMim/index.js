@@ -32,7 +32,11 @@ export default function SobreMim() {
     <p className={styles.paragrafo}>E também estudei por 1 ano na <a href="https://cursos.alura.com.br/user/gomespucienik" target="_blank" rel="noopener noreferrer">alura</a>, concluindo varios cursos de programação.</p>
 
     <p className={styles.paragrafo}>
-      Um dos meus maiores projetos até agora foi a criação de um sistema de ordens de serviço para a empresa Apwinner. Esse projeto foi um desafio incrível e me proporcionou uma experiência prática valiosa na resolução de problemas do mundo real.
+      Um dos meus projetos foi a criação de um sistema de ordens de serviço para a empresa Apwinner. Esse projeto foi um desafio incrível e me proporcionou uma experiência prática valiosa na resolução de problemas do mundo real.
+    </p>
+
+    <p className={styles.paragrafo}>
+      Atualmente sou desenvolvedor na Pontamed Farmaceutica, onde tenho a oportunidade de trabalhar em projetos de maior escala e impacto, enfrentando desafios complexos e contribuindo para soluções que fazem a diferença.
     </p>
 
     <p className={styles.paragrafo}>
