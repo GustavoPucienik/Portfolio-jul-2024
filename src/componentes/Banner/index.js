@@ -11,7 +11,7 @@ export default function Banner() {
         </h1>
 
         <p className={styles.paragrafo}>
-          Boas vindas ao meu espaço pessoal! Eu sou Gustavo Gomes, sou estudante de engenharia de software e desenvolvedor Fullstack.
+          Boas vindas ao meu espaço pessoal! Eu sou Gustavo Gomes, sou formado em engenharia de software e desenvolvedor Fullstack.
         </p>
       </div>
 
