@@ -30,7 +30,7 @@ export default function SobreMim() {
     </p>
 
     <p className={styles.paragrafo}>
-      Um dos meus projetos mais relevantes foi o desenvolvimento de um sistema de ordens de serviço para a empresa Apwinner, onde tive a oportunidade de aplicar meus conhecimentos em um contexto real e trazer melhorias para o processo interno da empresa.
+      O desenvolvimento de um sistema de ordens de serviço para a empresa Apwinner marcou o início da minha trajetória prática como programador. Foi nesse projeto que comecei a entender, na prática, o impacto do meu trabalho e percebi que já estava trilhando de fato o caminho como desenvolvedor, onde tive a oportunidade de aplicar meus conhecimentos em um contexto real e trazer melhorias para o processo interno da empresa.
     </p>
 
     <p className={styles.paragrafo}>
@@ -42,7 +42,7 @@ export default function SobreMim() {
     </p>
 
     <p className={styles.paragrafo}>
-      Fora do mundo da programação, gosto de jogar videogame, assistir séries e ler livros — momentos que me ajudam a recarregar as energias e manter o equilíbrio.
+      Fora do mundo da programação, gosto de jogar videogame, assistir séries e ler livros, momentos que me ajudam a recarregar as energias e manter o equilíbrio.
     </p>
 
     </PostModelo>
