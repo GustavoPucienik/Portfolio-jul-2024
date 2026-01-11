@@ -9,10 +9,6 @@ export default async function handler (req, res) {
   }
 
   try {
-    console.log("SMTP_HOST:", process.env.SMTP_HOST);
-    console.log("SMTP_PORT:", process.env.SMTP_PORT);
-    console.log("SMTP_USER:", process.env.SMTP_USER);
-    console.log("SMTP_PASS:", process.env.SMTP_PASS);
 
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
@@ -24,12 +20,31 @@ export default async function handler (req, res) {
       },
     });
 
+    //Email para mim mesmo sobre cliente que entrou em contato
     await transporter.sendMail({
       from: `"Gustavo - Tecnologia da informação" <${process.env.SMTP_USER}>`,
       to: `${process.env.SMTP_USER}`,
       subject: "Contato via site",
-      html: `<p>Nome: ${name}</p>
+      html: ` <p>Nome: ${name}</p> <br/>
+              <p>mensagem: ${message}</p>
             `,
+    });
+
+    await transporter.sendMail({
+      from: `"Gustavo - Tecnologia da informação" <${process.env.SMTP_USER}>`,
+      to: email,
+      subject: "Recebemos sua mensagem ✅",
+      html: `
+        <p>Olá <strong>${name}</strong>,</p>
+
+        <p>Recebi sua mensagem pelo site e retornarei o mais breve possível.</p>
+
+        <p><strong>Sua mensagem:</strong></p>
+        <blockquote>${message}</blockquote>
+
+        <p>Atenciosamente,<br/>
+        <strong>Gustavo</strong></p>
+      `,
     });
 
     return res.json({ success: true, message: "Email enviado com sucesso" });
