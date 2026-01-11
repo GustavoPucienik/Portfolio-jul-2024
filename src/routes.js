@@ -7,10 +7,13 @@ import PaginaPadrao from "componentes/PaginaPadrao";
 import Post from "paginas/Post";
 import NaoEncontrada from "paginas/NaoEncontrada";
 import Contatos from "paginas/Contatos";
+import { ToastContainer } from 'react-toastify';
 
 function AppRoutes() {
   return (
     <BrowserRouter>
+    <ToastContainer
+    toastClassName={() => ""}/>
     <Menu />
 
       <Routes>

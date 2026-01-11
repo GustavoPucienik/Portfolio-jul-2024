@@ -5,15 +5,15 @@ import styles from "./notify.module.css";
 export default function notifyError(msg) {
   toast.error(
     <div className={`${styles.toast} ${styles.toastError}`}>
-      <PiSealWarningDuotone className={styles.iconError} />
+      <div className={styles.iconError}>
+        <PiSealWarningDuotone />
+      </div>
       <span className={styles.message}>{msg}</span>
     </div>,
     {
       position: "bottom-right",
       hideProgressBar: true,
-      theme: "light",
       icon: false,
-      className: `${styles.toast} ${styles.toastError}`,
     }
   );
 }

@@ -5,15 +5,15 @@ import styles from "./notify.module.css";
 export default function notifySuccess(msg) {
   toast.success(
     <div className={`${styles.toast} ${styles.toastSuccess}`}>
-      <PiSealCheckBold className={styles.iconSuccess} />
+      <div className={styles.iconSuccess}>
+        <PiSealCheckBold />
+      </div>
       <span className={styles.message}>{msg}</span>
     </div>,
     {
       position: "bottom-right",
       hideProgressBar: true,
-      theme: "light",
       icon: false,
-      className: `${styles.toast} ${styles.toastSuccess}`,
     }
   );
 }
