@@ -1,23 +1,63 @@
-.navegacao {
+.header {
+  width: 100%;
+}
+
+.nav {
   height: 112px;
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 3rem;
+  position: relative;
 }
 
-.link {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+/* ===== LISTA ===== */
+.lista {
+  display: flex;
+  gap: 3rem;
+}
+
+/* ===== BOTÃO ===== */
+.hamburguer {
+  display: none;
+  position: absolute;
+  right: 1.5rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
   color: var(--cor-fonte-principal);
 }
 
-.linkDestacado {
-  text-decoration: underline;
-}
-
+/* ===== MOBILE ===== */
 @media (max-width: 744px) {
-  .navegacao {
-      height: 72px;
+  .nav {
+    height: 72px;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+
+  .lista {
+    position: absolute;
+    top: 72px;
+    left: 0;
+
+    width: 100%;
+    background-color: var(--branco);
+
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    padding: 2rem 0;
+
+    display: none; /* 🔴 escondido por padrão */
+  }
+
+  .aberta {
+    display: flex; /* 🟢 aparece quando aberto */
   }
 }
