@@ -6,6 +6,7 @@ import Rodape from "componentes/Rodape";
 import PaginaPadrao from "componentes/PaginaPadrao";
 import Post from "paginas/Post";
 import NaoEncontrada from "paginas/NaoEncontrada";
+import Contatos from "paginas/Contatos";
 
 function AppRoutes() {
   return (
@@ -17,6 +18,7 @@ function AppRoutes() {
         <Route index element={<SectionCards/>}/>
         <Route path="/sobremim" element={<SobreMim/>}/> 
         <Route path="/projetos" element={<SectionCards/>}/> 
+        <Route path="/contatos" element={<Contatos/>}/> 
       </Route>
       
         <Route path="/posts/:id" element={<Post/>}/> 

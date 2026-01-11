@@ -15,6 +15,9 @@ export default function Menu() {
         <MenuLink to="/projetos">
             Projetos
         </MenuLink>
+        <MenuLink to="/contatos">
+            Contatos
+        </MenuLink>
       </nav>
     </header>
   );
