@@ -2,6 +2,7 @@ import nodemailer from "nodemailer";
 
 export default async function handler (req, res) {
   const { email, name, message } = req.body;
+  console.log("Chegou aqui");
 
   if (!email || !name || !message) {
     return res.status(400).json({ error: "Campos obrigatórios ausentes." , email: email, name: name, message: message});
@@ -22,13 +23,16 @@ export default async function handler (req, res) {
       from: `"Gustavo - Tecnologia da informação" <${process.env.SMTP_USER}>`,
       to: `${process.env.SMTP_USER}`,
       subject: "Contato via site",
-      html: `<p>Nome: ${name}</p> <br/>
-              <p>mensagem: ${message}</p>
+      html: `<p>Nome: ${name}</p>
             `,
     });
 
     return res.json({ success: true, message: "Email enviado com sucesso" });
   } catch (error) {
-    return res.status(500).json({ error: "Erro ao enviar e-mail." });
+    console.error("Erro Nodemailer:", error);
+    return res.status(500).json({
+      error: "Erro ao enviar e-mail.",
+      detail: error.message,
+    });
   }
 };
