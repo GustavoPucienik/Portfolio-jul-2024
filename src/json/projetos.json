@@ -10,8 +10,7 @@
     "id": 2,
     "titulo": "Sistema de ordens de serviço para manutenção",
     "descricao": "Sistema interno desenvolvido para a empresa Apwinner para gerenciar ordens de serviço do setor de manutenção. Funcionalidades: cadastro e emissão de OS, relatórios mensais e controle de estoque. Projeto privado — acesso restrito à empresa.",
-    "url": "https://github.com/GustavoPucienik/Ordem_de_servico",
-    "private": true
+    "private": false
   },
   {
     "id": 3,
