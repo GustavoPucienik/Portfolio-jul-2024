@@ -62,7 +62,7 @@ export default function ContactForm() {
           message: formData.message,
         }),
       }); 
-      const data = await response.json();
+      await response.json();
 
       if (!response.ok) {
         notifyError("Ocorreu um erro ao enviar a mensagem.");

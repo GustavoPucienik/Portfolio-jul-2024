@@ -25,14 +25,14 @@ export default function ContactSection() {
             <FaInstagram />
           </a>
 
-          {/* <a
-            href="https://www.linkedin.com/in/"
+          <a
+            href="https://www.linkedin.com/in/gustavopucienik/"
             target="_blank"
             rel="noopener noreferrer"
             className={`${styles.socialLink} ${styles.linkedin}`}
           >
             <FaLinkedin />
-          </a> */}
+          </a>
 
           <a
             href="https://wa.me/+5542998603050"
