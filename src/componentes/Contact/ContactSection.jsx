@@ -4,6 +4,8 @@ import ContactForm from "./ContactForm.jsx";
 import styles from "./ContactSection.module.css";
 
 export default function ContactSection() {
+  const encoded = ["55429", "98603", "050"].join("");
+  const whatsappLink = `https://wa.me/${encoded}`;
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -35,7 +37,7 @@ export default function ContactSection() {
           </a>
 
           <a
-            href="https://wa.me/+5542998603050"
+            href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
             className={`${styles.socialLink} ${styles.whatsapp}`}
