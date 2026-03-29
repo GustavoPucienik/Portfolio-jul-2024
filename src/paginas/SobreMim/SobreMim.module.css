@@ -50,3 +50,93 @@
       line-height: 1.75rem;
   }
 }
+
+/* Roadmap */
+.roadmapTitulo {
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--azul-escuro);
+}
+
+.roadmap {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.roadmap::before {
+  content: '';
+  position: absolute;
+  left: 4.5rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--azul-escuro);
+  opacity: 0.2;
+}
+
+.roadmapItem {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+}
+
+.roadmapAno {
+  min-width: 3.5rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--azul-escuro);
+  padding-top: 0.15rem;
+}
+
+.roadmapLinha {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.roadmapPonto {
+  width: 12px;
+  height: 12px;
+  min-width: 12px;
+  border-radius: 50%;
+  background: var(--azul-escuro);
+  margin-top: 0.35rem;
+}
+
+.roadmapConteudo {
+  flex: 1;
+}
+
+.roadmapEvento {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.roadmapEvento:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 744px) {
+  .roadmapTitulo {
+    font-size: 1.5rem;
+  }
+
+  .roadmap::before {
+    left: 4rem;
+  }
+
+  .roadmapAno {
+    font-size: 1rem;
+    min-width: 3rem;
+  }
+
+  .roadmapEvento {
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+  }
+}

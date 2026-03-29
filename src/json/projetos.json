@@ -1,27 +1,37 @@
 [
   {
     "id": 1,
-    "titulo" : "Site de apresentação profissional - Advogada",
-    "url": "https://sindypaes.adv.br"
+    "titulo": "Site de apresentação profissional - Advogada",
+    "descricao": "Site institucional desenvolvido para apresentação profissional de uma advogada. Layout responsivo, moderno e focado em conversão.",
+    "url": "https://sindypaes.adv.br",
+    "private": false
   },
   {
     "id": 2,
-    "titulo" : "Sistema de ordens de serviço para manutenção.",
-    "url": "https://github.com/GustavoPucienik/Ordem_de_servico"
+    "titulo": "Sistema de ordens de serviço para manutenção",
+    "descricao": "Sistema interno desenvolvido para a empresa Apwinner para gerenciar ordens de serviço do setor de manutenção. Funcionalidades: cadastro e emissão de OS, relatórios mensais e controle de estoque. Projeto privado — acesso restrito à empresa.",
+    "url": "https://github.com/GustavoPucienik/Ordem_de_servico",
+    "private": true
   },
   {
     "id": 3,
-    "titulo": "Api para pet shop em typescript.",
-    "url": "https://github.com/GustavoPucienik/API-PetShop-typescript"
+    "titulo": "API para pet shop em TypeScript",
+    "descricao": "API REST desenvolvida em TypeScript para gerenciamento de um pet shop. Inclui cadastro de pets, clientes e agendamentos.",
+    "url": "https://github.com/GustavoPucienik/API-PetShop-typescript",
+    "private": false
   },
   {
     "id": 4,
-    "titulo" : "Api de produtos em typescript.",
-    "url": "https://github.com/GustavoPucienik/Api-rest-typescript"
+    "titulo": "API de produtos em TypeScript",
+    "descricao": "API REST com TypeScript para gerenciamento de produtos. CRUD completo com validações e boas práticas de arquitetura.",
+    "url": "https://github.com/GustavoPucienik/Api-rest-typescript",
+    "private": true
   },
   {
     "id": 5,
-    "titulo": "Consultar tabela fipe do seu veiculo em java",
-    "url": "https://github.com/GustavoPucienik/TabelaFipe_JAVA"
+    "titulo": "Consultar tabela FIPE do seu veículo em Java",
+    "descricao": "Aplicação Java que consulta a tabela FIPE para obter o valor de mercado de veículos. Integração com API pública da FIPE.",
+    "url": "https://github.com/GustavoPucienik/TabelaFipe_JAVA",
+    "private": false
   }
 ]
