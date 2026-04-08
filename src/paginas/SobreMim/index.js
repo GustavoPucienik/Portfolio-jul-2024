@@ -1,6 +1,7 @@
 import styles from "./SobreMim.module.css";
 
 import PostModelo from "componentes/PostModelo";
+import { Helmet } from 'react-helmet-async';
 import fotoCapa from "img/sobre_mim_capa.png";
 import fotoSobreMim from "img/sobre_mim_foto.jpg";
 
@@ -42,6 +43,12 @@ const roadmap = [
 
 export default function SobreMim() {
   return (
+    <>
+    <Helmet>
+      <title>Sobre Mim — Gustavo Gomes</title>
+      <meta name="description" content="Conheça a trajetória de Gustavo Gomes: desenvolvedor Fullstack formado em Engenharia de Software, com experiência em TypeScript, Node.js, Java e SQL." />
+      <link rel="canonical" href="https://portfolio-gustavo-sepia.vercel.app/sobremim" />
+    </Helmet>
     <PostModelo
       fotoCapa={fotoCapa}
       titulo="Sobre mim"
@@ -100,5 +107,6 @@ export default function SobreMim() {
     </div>
 
     </PostModelo>
+    </>
   );
 }
