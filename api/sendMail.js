@@ -34,7 +34,7 @@ const emailBase = (content) => `
             <td style="background-color:#041833;border-radius:0 0 12px 12px;padding:20px 40px;text-align:center;">
               <p style="margin:0;font-size:12px;color:#7aa3d4;">
                 Este email foi enviado automaticamente pelo site
-                <a href="https://gustavopucienik.vercel.app" style="color:#1875E8;text-decoration:none;">gustavopucienik.vercel.app</a>
+                <a href="https://portfolio-gustavo-sepia.vercel.app/sobremim" style="color:#1875E8;text-decoration:none;">portfolio-gustavo-sepia.vercel.app</a>
               </p>
             </td>
           </tr>
@@ -91,10 +91,9 @@ const confirmationHtml = (name, message) => emailBase(`
   <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f0f4f8;border-radius:8px;padding:20px 24px;margin-bottom:8px;">
     <tr>
       <td>
-        <p style="margin:0 0 12px;font-size:13px;font-weight:700;color:#041833;">Gustavo Pucienik</p>
-        <p style="margin:0 0 4px;font-size:13px;color:#444444;">Assistente de TI · Desenvolvedor</p>
+        <p style="margin:0 0 8px;font-size:13px;font-weight:700;color:#041833;">Gustavo Pucienik</p>
         <p style="margin:0;font-size:13px;">
-          <a href="https://gustavopucienik.vercel.app" style="color:#1875E8;text-decoration:none;">gustavopucienik.vercel.app</a>
+          <a href="https://portfolio-gustavo-sepia.vercel.app/sobremim" style="color:#1875E8;text-decoration:none;">portfolio-gustavo-sepia.vercel.app</a>
         </p>
       </td>
     </tr>
