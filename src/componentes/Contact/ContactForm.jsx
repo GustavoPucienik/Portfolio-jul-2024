@@ -9,6 +9,7 @@ export default function ContactForm() {
     email: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const validateForm = () => {
     if (!formData.name.trim()) {
@@ -37,7 +38,7 @@ export default function ContactForm() {
       return false;
     }
 
-    return true; // tudo certo ✔
+    return true;
   };
 
   const handleChange = (e) => {
@@ -46,11 +47,11 @@ export default function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    // 🔐 bloqueia envio se a validação falhar
+
     if (!validateForm()) return;
 
-      try {
+    setLoading(true);
+    try {
       const response = await fetch("/api/sendMail", {
         method: "POST",
         headers: {
@@ -61,7 +62,7 @@ export default function ContactForm() {
           email: formData.email,
           message: formData.message,
         }),
-      }); 
+      });
       await response.json();
 
       if (!response.ok) {
@@ -72,64 +73,66 @@ export default function ContactForm() {
       notifySuccess("Mensagem enviada com sucesso!");
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
-      notifySuccess("Mensagem enviada com sucesso!");
       notifyError("Não foi possível enviar a mensagem.");
+    } finally {
+      setLoading(false);
     }
-
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className={styles.form}
-    >
+    <form onSubmit={handleSubmit} className={styles.form}>
       <div className={styles.field}>
-        <label className={styles.label}>
-          Nome
-        </label>
+        <label className={styles.label}>Nome</label>
         <input
           type="text"
           name="name"
           value={formData.name}
           onChange={handleChange}
           required
+          disabled={loading}
           className={styles.input}
         />
       </div>
 
       <div className={styles.field}>
-        <label className={styles.label}>
-          Email
-        </label>
+        <label className={styles.label}>Email</label>
         <input
           type="email"
           name="email"
           value={formData.email}
           onChange={handleChange}
           required
+          disabled={loading}
           className={styles.input}
         />
       </div>
 
       <div className={styles.field}>
-        <label className={styles.label}>
-          Mensagem
-        </label>
+        <label className={styles.label}>Mensagem</label>
         <textarea
           name="message"
           rows="5"
           value={formData.message}
           onChange={handleChange}
           required
+          disabled={loading}
           className={styles.textarea}
         />
       </div>
 
       <button
         type="submit"
-        className={styles.button}
+        disabled={loading}
+        className={`${styles.button} ${loading ? styles.buttonLoading : ""}`}
       >
-        Enviar Mensagem
+        {loading ? (
+          <>
+            <span className={styles.spinner} />
+            Enviando...
+          </>
+        ) : (
+          "Enviar Mensagem"
+        )}
       </button>
     </form>
   );
