@@ -32,5 +32,12 @@
     "descricao": "Aplicação Java que consulta a tabela FIPE para obter o valor de mercado de veículos. Integração com API pública da FIPE.",
     "url": "https://github.com/GustavoPucienik/TabelaFipe_JAVA",
     "private": false
+  },
+  {
+    "id": 6,
+    "titulo": "RemoteMouse — controle o PC pelo celular via Wi-Fi",
+    "descricao": "Aplicação fullstack que transforma o smartphone em controle remoto do computador via rede local. Backend em Go com WebSocket e Win32 API para controle nativo do mouse e teclado. Frontend em React + TypeScript com Vite. Sem conta, sem internet externa, sem anúncios.",
+    "url": "https://github.com/GustavoPucienik/RemoteMouse",
+    "private": false
   }
 ]
