@@ -1,5 +1,12 @@
 [
   {
+    "id": 7,
+    "capaExt": ".webp",
+    "titulo": "TRC Sistemas — Plataforma de gestão corporativa",
+    "descricao": "Sistema de gestão interna fullstack desenvolvido do zero para a TRC Distribuição, em produção com 50 usuários ativos. 9 módulos de negócio: Manutenção, Logística, Financeiro, Fiscal, Comercial, Marketing, Compras, Devoluções e Pagamentos. ~80 tabelas, 150+ endpoints REST documentados com Swagger. Frontend em React 18 + TypeScript + Redux Toolkit + Tailwind CSS. Backend em Node.js + TypeScript + Express + TypeORM + MySQL. RBAC granular com bitmask de permissões e escopo de dados (OWN/GROUP/ALL). Integração com ERP SAP Business One. Notificações em tempo real via WebSocket (Socket.io) + Web Push + e-mail. Auditoria completa, soft delete, snapshots históricos e assinatura digital. Projeto privado — sistema interno corporativo.",
+    "private": true
+  },
+  {
     "id": 1,
     "titulo": "Site de apresentação profissional - Advogada",
     "descricao": "Site institucional desenvolvido para apresentação profissional de uma advogada. Layout responsivo, moderno e focado em conversão.",
@@ -7,9 +14,16 @@
     "private": false
   },
   {
-    "id": 2,
-    "titulo": "Sistema de ordens de serviço para manutenção",
-    "descricao": "Sistema interno desenvolvido para a empresa Apwinner para gerenciar ordens de serviço do setor de manutenção. Funcionalidades: cadastro e emissão de OS, relatórios mensais e controle de estoque. Projeto privado — acesso restrito à empresa.",
+    "id": 8,
+    "titulo": "Sistema de Gestão de Pedidos B2B — TRC Distribuidora",
+    "descricao": "Aplicação fullstack B2B para automação do processo comercial da TRC Distribuição, do pedido até a exportação para o ERP SAP Business One. Fluxo completo DRAFT → PENDING → APPROVED → EXPORTED com aprovação por supervisores. 4 perfis de acesso (ADMIN, SUPERVISOR, BUYER, INTERNAL_SELLER) com hierarquia matriz/filiais e orçamento mensal por filial. Catálogos com vigência de contrato, snapshot de preço no momento do pedido e busca por nome ou código SAP. Notificações em tempo real via WebSocket (Socket.IO). Integração SAP B1 via Service Layer REST com sync bidirecional. Backend em NestJS + TypeORM + PostgreSQL; frontend em React 18 + TypeScript + Tailwind CSS. Destaques técnicos: cursor-based pagination, sequence PostgreSQL para numeração sem race condition, deduplicação de refresh token e carrinho persistido com TTL de 24h. Projeto privado — sistema interno corporativo.",
+    "private": true
+  },
+  {
+    "id": 6,
+    "titulo": "RemoteMouse — controle o PC pelo celular via Wi-Fi",
+    "descricao": "Aplicação fullstack que transforma o smartphone em controle remoto do computador via rede local. Backend em Go com WebSocket e Win32 API para controle nativo do mouse e teclado. Frontend em React + TypeScript com Vite. Sem conta, sem internet externa, sem anúncios.",
+    "url": "https://github.com/GustavoPucienik/RemoteMouse",
     "private": false
   },
   {
@@ -34,10 +48,9 @@
     "private": false
   },
   {
-    "id": 6,
-    "titulo": "RemoteMouse — controle o PC pelo celular via Wi-Fi",
-    "descricao": "Aplicação fullstack que transforma o smartphone em controle remoto do computador via rede local. Backend em Go com WebSocket e Win32 API para controle nativo do mouse e teclado. Frontend em React + TypeScript com Vite. Sem conta, sem internet externa, sem anúncios.",
-    "url": "https://github.com/GustavoPucienik/RemoteMouse",
-    "private": false
+    "id": 2,
+    "titulo": "Sistema de ordens de serviço para manutenção (2023)",
+    "descricao": "Projeto legado de 2023 desenvolvido para a empresa Apwinner. Sistema interno para gerenciar ordens de serviço do setor de manutenção: cadastro e emissão de OS, relatórios mensais e controle de estoque. Projeto privado — acesso restrito à empresa.",
+    "private": true
   }
 ]

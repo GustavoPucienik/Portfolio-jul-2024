@@ -5,7 +5,7 @@ import BotaoPrincipal from 'componentes/BotaoPrincipal';
 
 export default function Card( {some, type} ) {
   const [modalAberto, setModalAberto] = useState(false);
-  const tipo = type === 'posts' ? '.png': '.jpeg';
+  const tipo = some.capaExt ?? (type === 'posts' ? '.png' : '.jpeg');
 
   if (type === 'posts') {
     return (
