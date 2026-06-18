@@ -21,6 +21,12 @@
     "private": true
   },
   {
+    "id": 9,
+    "titulo": "Pontamed — Sistema interno com vários módulos (2024/2025)",
+    "descricao": "Sistema interno multi-módulo desenvolvido para a Pontamed Farmacêutica em 2024/2025. Frontend de 8+ módulos: solicitações internas, rastreio de NF-e por transportadora, disparo de e-mails corporativos e construtor de relatórios. Fullstack nos módulos de controle de acesso — RBAC com bitmask de permissões (VIEW/CREATE/EDIT/DELETE/ADMIN) e sidebar dinâmica orientada a banco de dados — e de ocorrências, com ficha completa, thread de comentários, múltiplos anexos e lookup em tempo real no SAP B1. Stack: React 18 + Redux Toolkit + Tailwind CSS; Node.js + Express + Sequelize + MySQL; integração com ERP SAP Business One via Service Layer REST. Projeto privado — sistema interno corporativo.",
+    "private": true
+  },
+  {
     "id": 4,
     "titulo": "RemoteMouse — controle o PC pelo celular via Wi-Fi",
     "descricao": "Aplicação fullstack que transforma o smartphone em controle remoto do computador via rede local. Backend em Go com WebSocket e Win32 API para controle nativo do mouse e teclado. Frontend em React + TypeScript com Vite. Sem conta, sem internet externa, sem anúncios.",
