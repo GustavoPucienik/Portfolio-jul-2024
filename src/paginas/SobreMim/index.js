@@ -36,7 +36,8 @@ const roadmap = [
     ano: "2026",
     eventos: [
       "Assistente de TI na TRC Distribuição: desenvolvimento de sistemas, APIs, banco de dados, suporte a ERP SAP (posição atual)",
-      "Conclusão prevista da Pós-graduação em Ciência e Análise de Dados"
+      "Conclusão da Pós-graduação em Ciência e Análise de Dados — Unopar",
+      "Início da Pós-graduação em Segurança e Proteção de Dados na Nuvem"
     ]
   }
 ];
@@ -77,7 +78,7 @@ export default function SobreMim() {
     </p>
 
     <p className={styles.paragrafo}>
-      Atualmente atuo como <strong>Assistente de TI na TRC Distribuição</strong>, onde desenvolvo sistemas, APIs, trabalho com banco de dados e dou suporte ao ERP SAP. Estou também finalizando a Pós-graduação em Ciência e Análise de Dados, expandindo meu conhecimento para a área de dados.
+      Atualmente atuo como <strong>Assistente de TI na TRC Distribuição</strong>, onde desenvolvo sistemas, APIs, trabalho com banco de dados e dou suporte ao ERP SAP. Concluí a Pós-graduação em Ciência e Análise de Dados e estou cursando Pós-graduação em Segurança e Proteção de Dados na Nuvem, expandindo meu conhecimento para as áreas de dados e segurança.
     </p>
 
     <p className={styles.paragrafo}>
