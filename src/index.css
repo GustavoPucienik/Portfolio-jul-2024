@@ -1,46 +1,104 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
+/* Tokens: escuro por padrão, .light no <html> troca para claro */
 :root {
-  --azul-escuro: #041833;
-  --azul-medio: #1875E8;
-  --cor-fonte-principal: #041833;
-  --cor-fonte-post: #444444;
-  --branco: #FFF;
-  --fonte-principal: 'Raleway', sans-serif;
-  --fonte-secundaria: 'Playfair Display', sans-serif;
-
-  font-family: var(--fonte-principal);
+  --c-bg: #0a0f1c;
+  --c-surface: #111827;
+  --c-surface-2: #172033;
+  --c-border: #1f2a40;
+  --c-text: #e6edf7;
+  --c-muted: #94a3b8;
+  --c-accent: #3b8bf0;
+  --c-accent-2: #22d3ee;
+  --c-grid: rgb(148 163 184 / 0.06);
+  color-scheme: dark;
 }
 
-#root {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: minmax(0, 1fr);
-  min-height: 100vh;
+:root.light {
+  --c-bg: #f7f9fc;
+  --c-surface: #ffffff;
+  --c-surface-2: #eef2f8;
+  --c-border: #dde3ee;
+  --c-text: #0b1526;
+  --c-muted: #526075;
+  --c-accent: #1667d9;
+  --c-accent-2: #0891b2;
+  --c-grid: rgb(15 23 42 / 0.05);
+  color-scheme: light;
 }
 
-a, button, input, textarea {
-  font: inherit;
-  color: inherit;
+@theme {
+  --color-bg: var(--c-bg);
+  --color-surface: var(--c-surface);
+  --color-surface-2: var(--c-surface-2);
+  --color-border: var(--c-border);
+  --color-fg: var(--c-text);
+  --color-muted: var(--c-muted);
+  --color-accent: var(--c-accent);
+  --color-accent-2: var(--c-accent-2);
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
 
-button {
-  background-color: transparent;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+  }
+  ::selection {
+    background: color-mix(in srgb, var(--c-accent) 35%, transparent);
+  }
+  :focus-visible {
+    outline: 2px solid var(--c-accent);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
 }
 
-a {
-  text-decoration: none;
+@utility bg-grid {
+  background-image:
+    linear-gradient(var(--c-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--c-grid) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at top, black 30%, transparent 75%);
 }
 
-li {
-  list-style: none;
+@utility text-gradient {
+  background: linear-gradient(90deg, var(--c-accent), var(--c-accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-h1, h2, h3 {
-  font-weight: 700;
-  line-height: 5rem;
+/* Animação de entrada ao rolar (ver componente Reveal) */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visivel {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Toasts */
+.Toastify__toast {
+  background: var(--c-surface) !important;
+  color: var(--c-text) !important;
+  border: 1px solid var(--c-border);
+  border-radius: 12px !important;
 }
