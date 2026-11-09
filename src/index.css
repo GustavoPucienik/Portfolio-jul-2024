@@ -45,6 +45,11 @@
   html {
     scroll-behavior: smooth;
   }
+  /* clip (e não hidden) para não quebrar o position: sticky do header */
+  html,
+  body {
+    overflow-x: clip;
+  }
   body {
     @apply bg-bg text-fg font-sans antialiased;
   }

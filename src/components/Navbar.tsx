@@ -65,6 +65,7 @@ export default function Navbar() {
   );
 
   return (
+    <>
     <header
       className={cx(
         "sticky top-0 z-40 border-b transition-colors duration-300",
@@ -98,8 +99,10 @@ export default function Navbar() {
           </button>
         </div>
       </Container>
+    </header>
 
-      {/* Gaveta mobile */}
+      {/* Gaveta mobile — fica FORA do <header>: o backdrop-filter do header vira
+          containing block de elementos fixed e quebraria o posicionamento. */}
       <div
         className={cx(
           "fixed inset-0 z-50 bg-black/50 backdrop-blur-sm transition-opacity md:hidden",
@@ -129,12 +132,13 @@ export default function Navbar() {
             key={l.to}
             to={l.to}
             end={l.to === "/"}
+            onClick={() => setAberto(false)}
             className={({ isActive }) => cx(linkClass({ isActive }), "py-3 text-base")}
           >
             {l.label}
           </NavLink>
         ))}
       </nav>
-    </header>
+    </>
   );
 }
